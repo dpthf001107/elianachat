@@ -1,0 +1,22 @@
+# FastAPI Backend Requirements (CPU-only for EC2 t3.small)
+langchain>=0.3.0
+langchain-community>=0.3.0
+langchain-core>=0.3.0
+langchain-openai>=0.2.0
+psycopg2-binary>=2.9.9
+pgvector>=0.3.0
+numpy>=1.24.0
+fastapi>=0.104.0
+uvicorn>=0.24.0
+python-multipart>=0.0.6
+transformers>=4.38.0
+pydantic-settings>=2.4.0
+accelerate>=0.24.0
+peft>=0.10.0
+trl>=0.10.0
+datasets>=2.14.0
+safetensors>=0.4.0
+
+# CPU-only PyTorch (install separately with CPU index)
+# torch will be installed via pip install command with --index-url flag
+
