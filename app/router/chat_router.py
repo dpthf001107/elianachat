@@ -9,10 +9,7 @@ from typing import Optional
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 
-try:
-    from app.service.chat_service import ChatService  # EC2
-except ImportError:
-    from backend.app.service.chat_service import ChatService  # Local
+from app.service.chat_service import ChatService
 
 router = APIRouter(prefix="/api", tags=["chat"])
 
